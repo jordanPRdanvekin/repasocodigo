@@ -10,6 +10,8 @@ public class playerBehavior : MonoBehaviour // Esta es la clase principal que co
     public int movimiento = 20; // Esta es la velocidad con la que el jugador se mueve.
     public int coinobtained = 0; //esta es la variable de cantidad de monedas.
     public TextMeshProUGUI coinstxt;
+    public AudioClip pickupcoin;
+    public AudioClip spickupcoin;
 
     // Start se llama al inicio del juego.
     void Start()
@@ -37,16 +39,19 @@ public class playerBehavior : MonoBehaviour // Esta es la clase principal que co
         {
             coinobtained++; //++ = sumar 1 es decir coinobtained = coinobtained + 1; pero en formato de atajo
             Debug.Log("eh tocado la moneda comun obteniendo " + coinobtained + " monedas hoy "); // ...mostramos un mensaje en la consola.
+            AudioSource.PlayClipAtPoint(pickupcoin, transform.position);
         }
         else if (other.CompareTag("specialcoin")) // Si el jugador toca una moneda especial...
         {
             coinobtained += 5; //es el equivalente a poner coinontained =  coinobtained + 5; pero mas breve
             Debug.Log("eh tocado la moneda especial obteniendo " + coinobtained + " monedas hoy "); // ...mostramos un mensaje en la consola.
+            AudioSource.PlayClipAtPoint(spickupcoin, transform.position);
         }
         if (other.tag.Contains("coin"))
         {
             coinstxt.text = coinobtained.ToString();
         other.gameObject.SetActive(false);
+            
         }
     }
 }

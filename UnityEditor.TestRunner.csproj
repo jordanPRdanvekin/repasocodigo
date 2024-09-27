@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{82506B71-F04B-53B9-166D-0DFDD16DDCF4}</ProjectGuid>
+    <ProjectGuid>{5DF6784D-E438-FD87-5302-94FFDB2766D8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEditor.TestRunner</AssemblyName>
@@ -162,9 +162,9 @@
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\UnityTestProtocol\UnityTestProtocolStarter.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\CommandLineTest\ExecutionSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\TestRunner\Callbacks\EditModeRunnerCallback.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\Api\ICallbacksDelegator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\CommandLineTest\Executer.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\TestLaunchers\EditModeLauncher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\CommandLineTest\Executer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\Api\ICallbacksDelegator.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\Api\TestResultAdaptor.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\TestRun\TestJobData.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEditor.TestRunner\TestRunner\Utils\EditorAssemblyWrapper.cs" />
@@ -811,7 +811,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{3F068BA3-3C76-3B34-C7C0-5893141468E1}</Project>
+      <Project>{24551117-67F9-84A0-E8E3-DE99C9132B9E}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
